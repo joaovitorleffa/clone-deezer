@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  width: 100px;
-  height: 100px;
+  width: ${props => props.width}px;
+  height: ${props => props.height}px;
   border-radius: 4px;
   margin-right: 10px;
   position: relative;
@@ -14,8 +14,8 @@ export const ContentIcon = styled.View`
   border-radius: 15px;
   background-color: #fff;
   position: absolute;
-  bottom: 8px;
-  left: 8px; 
+  bottom: ${props => props.position_bottom}%;
+  left: ${props => props.position_left}%; 
   align-items: center;
   justify-content: center;
 `;
